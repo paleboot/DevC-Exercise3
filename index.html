@@ -1,11 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Exercise 3</title>
-</head>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <link rel="stylesheet" href="./style.css">
+            <link href="https://fonts.googleapis.com/css?family=BenchNine&display=swap" rel="stylesheet"> 
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+            crossorigin="anonymous">
+            <title>planets</title>
+        </head>
 <body>
-    <center>
-        <h1>Daftar Planet</h1>
-    </center>
+    <div class="container-fluid">
+        <h1 id="title">star wars planets</h1>
+    </div>
+    <div class="container-fluid">
+        <div class="form-group">
+            <input type="text" class="form-control" id="filter" onkeyup="filter()" placeholder="search planet name">
+        </div>
+    </div>
+    <div class="container-fluid">
+        <table class="table table-fixed table-hover table-sm" id="planetsTable">
+            <thead class="thead-light">
+                <tr>
+                    <!--<th scope="col">#</th>-->
+                    <th scope="col" style="width: 5%">Name</th>
+                    <th scope="col" style="width: 13%">Rotation Period</th>
+                    <th scope="col" style="width: 11%">Orbital Period</th>
+                    <th scope="col" style="width: 7%">Diameter</th>
+                    <th scope="col" style="width: 10%">Climate</th>
+                    <th scope="col" style="width: 14%">Gravity</th>
+                    <th scope="col" style="width: 14%">Terrain</th>
+                    <th scope="col" style="width: 12%">Surface Water</th>
+                    <th scope="col" style="width: 14%">Population</th>
+                </tr>
+            </thead>
+            <tbody><tr></tr></tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
